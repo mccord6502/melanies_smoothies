@@ -8,7 +8,7 @@ st.write(
   """Choose the fruits you want in your custom Smoothie!
   """
 )
-cnx = st.connect("snowflake")
+cnx = st.connection("snowflake")
 session = cnx.session()
 
 option = st.selectbox(
